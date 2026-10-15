@@ -1,0 +1,5 @@
+{"timestamp":"2026-10-10T19:21:06+02:00","method":"GET","endpoint":"/event_ticketing_api/api/api_key_test.php","status_code":200,"response_time_ms":2.54}
+{"timestamp":"2026-10-10T19:30:47+02:00","method":"GET","endpoint":"/event_ticketing_api/api/api_key_test.php","status_code":401,"response_time_ms":2.08}
+{"timestamp":"2026-10-15T14:48:10+02:00","method":"GET","endpoint":"/event_ticketing_api/api/api_key_test.php","status_code":500,"response_time_ms":1.26}
+{"timestamp":"2026-10-15T15:21:40+02:00","method":"GET","endpoint":"/event_ticketing_api/api/api_key_test.php","status_code":500,"response_time_ms":2.19}
+{"timestamp":"2026-10-15T15:32:21+02:00","method":"GET","endpoint":"/event_ticketing_api/api/api_key_test.php","status_code":500,"response_time_ms":1.16}

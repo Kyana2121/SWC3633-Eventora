@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Eventora | Event Ticketing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="login-screen" class="login-screen">
+    <section class="login-art">
+      <div class="brand brand-light"><span class="brand-mark">e</span><span>eventora</span></div>
+      <div class="art-copy">
+        <span class="eyebrow light-eyebrow">YOUR NEXT GREAT EXPERIENCE</span>
+        <h1>Make room<br>for <em>memories.</em></h1>
+        <p>Discover events, bring people together, and make every moment count.</p>
+        <div class="floating-event"><div class="mini-poster poster-one">LIVE<br><b>MUSIC</b></div><div><b>Good times are ahead</b><small>Concerts · Workshops · Community</small></div><span class="sparkle">✦</span></div>
+      </div>
+      <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+      <span class="art-note">Find your kind of event ♡</span>
+    </section>
+    <section class="login-panel">
+      <div class="login-content">
+        <div class="brand brand-mobile"><span class="brand-mark">e</span><span>eventora</span></div>
+        <span class="eyebrow">WELCOME TO EVENTORA</span>
+        <h2>Sign in to your<br><span>next experience.</span></h2>
+        <p class="muted">Use your account to continue to your dashboard.</p>
+        <form id="login-form" class="form-stack">
+          <label>Email address<input id="email" type="email" placeholder="you@example.com" autocomplete="username" required></label>
+          <label>Password<input id="password" type="password" placeholder="Enter your password" autocomplete="current-password" required></label>
+          <div id="login-message" class="message hidden" role="status"></div>
+          <button class="btn btn-primary btn-wide" type="submit">Sign in <span>→</span></button>
+        </form>
+        <div class="demo-divider"><span></span>QUICK PREVIEW<span></span></div>
+        <p class="muted tiny">Database setup is pending? Preview the interface with sample data. Preview mode does not authenticate against the backend.</p>
+        <div class="preview-buttons">
+          <button class="btn btn-soft" data-preview="admin">Admin preview</button>
+          <button class="btn btn-soft" data-preview="organiser">Organiser preview</button>
+          <button class="btn btn-soft" data-preview="customer">Customer preview</button>
+        </div>
+        <p class="login-foot">Eventora · Event Ticketing & Venue Booking System</p>
+      </div>
+    </section>
+  </div>
+
+  <div id="app-shell" class="app-shell hidden">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand sidebar-brand"><span class="brand-mark">e</span><span>eventora</span></div>
+      <div class="workspace-label">WORKSPACE</div>
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation"></nav>
+      <div class="sidebar-bottom">
+        <div class="help-card"><div class="help-icon">♡</div><b>Need a hand?</b><p>Keep your events running smoothly.</p><a href="#" id="help-link">Help centre ↗</a></div>
+        <button id="logout-button" class="logout-button"><span>↪</span> Sign out</button>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobile-menu" aria-label="Open navigation">☰</button>
+        <div class="breadcrumbs"><span>Workspace</span><b>/</b><strong id="breadcrumb-current">Overview</strong></div>
+        <div class="top-actions"><span class="date-chip" id="today-label"></span><button class="icon-button" id="notification-button" aria-label="Notifications">♧<i></i></button><div class="profile"><div class="avatar" id="avatar">KS</div><div><b id="profile-name">Kya Satina</b><small id="profile-role">Administrator</small></div><span class="profile-chevron">⌄</span></div></div>
+      </header>
+      <div class="page-wrap">
+        <div id="toast" class="toast hidden" role="status"></div>
+        <section id="page-content"></section>
+        <footer class="app-footer"><span>© 2026 Eventora</span><span>Made for moments that matter <b>♥</b></span></footer>
+      </div>
+    </main>
+  </div>
+  <div id="modal-root"></div>
+  <script src="app.js"></script>
+</body>
+</html>
